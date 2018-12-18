@@ -16,5 +16,7 @@ public class AppletRunner extends Applet
         tree4.draw(g);
         Box box = new Box(1000, 250, 50, 50);
         box.draw(g);
+        Man man = new Man(1500, 800, 25, 25);
+        man.draw(g);
     }
 }
