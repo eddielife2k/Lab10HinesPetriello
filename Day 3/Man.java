@@ -12,11 +12,21 @@ public class Man
     public void draw(Graphics g) {
         g.setColor(Color.white);
         g.fillOval(p1.getX(), p1.getY(), p2.getX(), p2.getY());
-        g.drawLine(p1.getX() + p2.getX() / 2, p1.getY(),
-                   p1.getX() + p2.getX() / 2, p1.getY() + 100);
-        g.drawLine(p1.getX() + p2.getX() / 2, p1.getY() + 100,
-                   p1.getX(), p1.getY() + 2 * p2.getY() );
-        g.drawLine(p1.getX() + p2.getX() / 2, p1.getY() + 100,
-                   p1.getX() + p2.getX(), p1.getY() + 2 * p2.getY());
+        
+        g.drawLine(p1.getX() + p2.getX()/2, p1.getY() + p2.getY(),
+        p1.getX() + p2.getX() / 2, p1.getY() + 3 * p2.getY());
+        
+        g.drawLine(p1.getX() + p2.getX() / 2, p1.getY() + p2.getY(),
+        p1.getX(), p1.getY() + 2 * p2.getY());
+        
+        g.drawLine(p1.getX() + p2.getX() / 2, p1.getY() + p2.getY(),
+        p1.getX() + p2.getX() , p1.getY() + 2 * p2.getY());
+        
+        g.drawLine(p1.getX() + p2.getX() / 2, p1.getY() + 3 * p2.getY(),
+        p1.getX(), p1.getY() + 4 * p2.getY());
+        
+        g.drawLine(p1.getX() + p2.getX() / 2, p1.getY() + 3 * p2.getY(),
+        p1.getX() + p2.getX() , p1.getY() + 4 * p2.getY());
+        
     }    
 }
